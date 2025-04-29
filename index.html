@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mom & Dad's Restaurant Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Mom & Dad's Restaurant Menu</h1>
+
+<!-- Search bar -->
+<input type="text" id="searchInput" placeholder="Search menu..." onkeyup="searchMenu()">
+
+<section id="menu">
+    <h2>Appetizers</h2>
+    <ul>
+        <li>Spring Rolls - $5.99</li>
+        <li>Edamame - $3.99</li>
+    </ul>
+
+    <h2>Main Dishes</h2>
+    <ul>
+        <li>Beef Bulgogi - $12.99</li>
+        <li>Spicy Chicken - $11.99</li>
+    </ul>
+
+    <h2>Drinks</h2>
+    <ul>
+        <li>Iced Tea - $2.50</li>
+        <li>Soda - $1.99</li>
+    </ul>
+</section>
+
+<!-- Search functionality -->
+<script>
+    function searchMenu() {
+      const input = document.getElementById('searchInput');
+      const filter = input.value.toLowerCase();
+      const items = document.querySelectorAll('#menu li');
+
+      items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? "" : "none";
+      });
+    }
+</script>
+</body>
+</html>
