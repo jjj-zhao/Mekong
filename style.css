@@ -24,12 +24,76 @@ section {
   margin-top: 20px;
 }
 
+/* Dropdown Section Styling */
+details {
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+}
+
+/* Alternating colors for open sections */
+details[open]:nth-of-type(odd) {
+  background-color: #fce8d5 !important;
+}
+
+details[open]:nth-of-type(even) {
+  background-color: #fff5e6 !important;
+}
+
+/* Match inner content background */
+details[open] ul {
+  background-color: inherit;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* Summary Styling */
+summary {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* Item List Styling */
 ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 10px;
 }
 
+/* Base LI Styling */
 li {
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  font-size: 16px;
   border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
 }
+
+/* Zebra striping inside dropdowns */
+details[open] li:nth-child(odd) {
+  background-color: #fffefb; /* subtle cream */
+}
+
+details[open] li:nth-child(even) {
+  background-color: #fbe9d7; /* warm peach */
+}
+
+/* Optional: hover effect */
+li:hover {
+  background-color: #ffe2b3;
+}
+
+/* Price column style */
+li span:last-child {
+  color: #444;
+  font-weight: bold;
+  text-align: right;
+}
+

@@ -2,43 +2,630 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mom & Dad's Restaurant Menu</title>
+    <title>Mekong Chinese Restaurant Menu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          background: #fff9f0;
+          color: #333;
+        }
+        h1 {
+          text-align: center;
+          color: darkred;
+        }
+        input[type="text"] {
+          width: 100%;
+          padding: 12px;
+          margin: 20px 0;
+          box-sizing: border-box;
+          font-size: 16px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+        section {
+          margin-top: 20px;
+        }
+        details {
+          margin-bottom: 10px;
+          background: #f9f9f9;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          padding: 10px;
+        }
+        summary {
+          font-weight: bold;
+          font-size: 18px;
+          cursor: pointer;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin-top: 10px;
+        }
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;
+          border-bottom: 1px solid #ddd;
+          font-size: 16px;
+        }
+        li span:first-child {
+          font-weight: bold;
+        }
+        li span:last-child {
+          color: #555;
+        }
+    </style>
 </head>
 <body>
-<h1>Mom & Dad's Restaurant Menu</h1>
-
-<!-- Search bar -->
+<h1>Mekong Chinese Restaurant</h1>
 <input type="text" id="searchInput" placeholder="Search menu..." onkeyup="searchMenu()">
-
 <section id="menu">
-    <h2>Appetizers</h2>
-    <ul>
-        <li>Spring Rolls - $5.99</li>
-        <li>Edamame - $3.99</li>
-    </ul>
 
-    <h2>Main Dishes</h2>
-    <ul>
-        <li>Beef Bulgogi - $12.99</li>
-        <li>Spicy Chicken - $11.99</li>
-    </ul>
+    <h2 style="color: #c0392b; font-size: 16px;">🍚 Only Marked Are Served with White Rice</h2>
+    <h2 style="color: #e67e22; font-size: 16px;">🌶️ = Hot & Spicy</h2>
 
-    <h2>Drinks</h2>
-    <ul>
-        <li>Iced Tea - $2.50</li>
-        <li>Soda - $1.99</li>
-    </ul>
+    <details open>
+        <summary>🥢 Appetizers (Aperitivo)</summary>
+        <ul>
+            <li><span>Spring Roll (2)</span><span>$3.50</span></li>
+            <li><span>Egg Roll (2)</span><span>$4.95</span></li>
+            <li><span>Shrimp Rolls (4)</span><span>$5.95</span></li>
+            <li><span>Roast Pork</span><span>$8.98</span></li>
+            <li><span>Fantail Shrimps (6)</span><span>$9.28</span></li>
+            <li><span>Honey Chicken Wings (8)</span><span>$11.98</span></li>
+            <li><span>Fried Chicken Wings (8)</span><span>$10.98</span></li>
+            <li><span>Hot Fried Chicken Wings (8)</span><span>$11.98</span></li>
+            <li><span>B.B.Q Ribs (5)</span><span>$12.98</span></li>
+            <li><span>Boneless Ribs / Roast Pork</span><span>$9.28</span></li>
+            <li><span>Pan Fried or Steamed Dumplings (10)</span><span>$11.98</span></li>
+            <li><span>Fried Wontons (12)</span><span>$5.98</span></li>
+            <li><span>Fried Wontons w/ Meat (10)</span><span>$5.98</span></li>
+            <li><span>Combination Appetizer - 2 Ribs, 2 Wings, 2 Shrimp, 2 Spring Rolls</span><span>$13.98</span></li>
+            <li><span>Krab Rangoon (8)</span><span>$8.98</span></li>
+            <li><span>French Fries</span><span>$3.98</span></li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🍱 Lunch Special - $9.58 - (Tues – Sat, 11:30 AM – 3:30 PM, No Sun)</summary>
+        <div>Includes: Pork Fried Rice, Ham Fried Rice, or White Rice</div>
+        <div>Plus: Egg Drop Soup, Wonton Soup, Shrimp Roll, or Egg Roll</div>
+        <ul>
+            <li><span>1. Chicken Chow Mein or Chop Suey</span><span></span></li>
+            <li><span>2. Chicken w/ Black Bean Sauce 🌶</span><span></span></li>
+            <li><span>3. Curry Chicken or Beef 🌶</span><span></span></li>
+            <li><span>4. Kung Pao Chicken 🌶</span><span></span></li>
+            <li><span>5. Honey Garlic Chicken</span><span></span></li>
+            <li><span>6. BBQ Ribs (3)</span><span></span></li>
+            <li><span>7. Fried Chicken Wings or Honey Wings (4)</span><span></span></li>
+            <li><span>8. Szechuan Chicken or Beef or Pork 🌶</span><span></span></li>
+            <li><span>9. Chicken or Beef w/ Broccoli</span><span></span></li>
+            <li><span>10. Pepper Steak</span><span></span></li>
+            <li><span>11. Mongolian Beef 🌶</span><span></span></li>
+            <li><span>12. Shrimp w/ Lobster Sauce</span><span></span></li>
+            <li><span>13. Szechuan Shrimp 🌶</span><span></span></li>
+            <li><span>14. Cashew Shrimp or Chicken</span><span></span></li>
+            <li><span>15. Sweet & Sour Chicken</span><span></span></li>
+            <li><span>16. Chicken or Pork Egg Foo Young</span><span></span></li>
+            <li><span>17. Chicken or Beef Lo Mein</span><span></span></li>
+            <li><span>19. Boneless Ribs</span><span></span></li>
+            <li><span>20. General, Orange 🌶, or Sesame Chicken</span><span></span></li>
+            <li><span>21. Beef or Chicken Mixed Vegetables</span><span></span></li>
+            <li><span>22. Moo Goo Gai Pan</span><span></span></li>
+            <li><span>23. Shrimp w/ Mixed Vegetables</span><span></span></li>
+            <li><span>24. Shrimp Broccoli</span><span></span></li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🍽️ Combination Dinner - $12.98 - (Tues – Sat after 3:00 PM, All Day Sun)</summary>
+        <div>Includes: Pork Fried Rice, Ham Fried Rice, or White Rice</div>
+        <div>Plus: Egg Drop Soup, Wonton Soup, Shrimp Roll, or Egg Roll</div>
+        <ul>
+            <li><span>1. Chicken Chow Mein or Chop Suey</span><span></span></li>
+            <li><span>2. Chicken w/ Black Bean Sauce 🌶</span><span></span></li>
+            <li><span>3. Curry Chicken or Beef 🌶</span><span></span></li>
+            <li><span>4. Kung Pao Chicken 🌶</span><span></span></li>
+            <li><span>5. Honey Garlic Chicken</span><span></span></li>
+            <li><span>6. BBQ Ribs (3) & Fantail Shrimp (2)</span><span></span></li>
+            <li><span>7. Fried Chicken Wings or Honey Wings (6)</span><span></span></li>
+            <li><span>8. Szechuan Chicken or Beef or Pork 🌶</span><span></span></li>
+            <li><span>9. Chicken or Beef w/ Broccoli</span><span></span></li>
+            <li><span>10. Pepper Steak</span><span></span></li>
+            <li><span>11. Mongolian Beef 🌶</span><span></span></li>
+            <li><span>12. Shrimp w/ Lobster Sauce</span><span></span></li>
+            <li><span>13. Szechuan Shrimp 🌶</span><span></span></li>
+            <li><span>14. Cashew Shrimp or Chicken</span><span></span></li>
+            <li><span>15. Sweet & Sour Chicken or Pork</span><span></span></li>
+            <li><span>16. Chicken or Pork Egg Foo Young</span><span></span></li>
+            <li><span>17. Chicken or Beef Lo Mein</span><span></span></li>
+            <li><span>18. Chicken w/ Garlic Sauce or Shrimp 🌶</span><span></span></li>
+            <li><span>19. Boneless Ribs</span><span></span></li>
+            <li><span>20. General, Orange, or Sesame Chicken 🌶</span><span></span></li>
+            <li><span>21. Beef w. Mixed Vegetables</span><span></span></li>
+            <li><span>22. Moo Goo Gai Pan</span><span></span></li>
+            <li><span>23. Shrimp w/ Mixed Vegetables</span><span></span></li>
+            <li><span>24. Shrimp Broccoli</span><span></span></li>
+
+        </ul>
+    </details>
+
+    <details>
+        <summary>👨‍👩‍👧 Family Special</summary>
+        <ul>
+            <li><span>#1<br>(Qt.) Wonton Soup<br>(Qt.) Special Fried Rice<br>10 pcs of Crab Rangoon<br>2 Egg Rolls</span><span>$30.98</span></li>
+            <li><span>#2<br>(Qt.) Special Fried Rice<br>8 pcs of Chicken Wings<br>(L) Honey or Sweet & Sour Chicken<br>(L) Chicken Lo Mein or Chop Suey</span><span>$44.98</span></li>
+            <li><span>#3<br>Jumbo Special Fried Rice<br>8 pcs of Chicken Wings<br>(L) Honey or Sweet & Sour Chicken<br>(L) Pepper Steak or Beef Broccoli</span><span>$58.98</span></li>
+            <li><span>#4<br>Jumbo Special Fried Rice<br>8 pcs of Chicken Wings<br>8 pcs of Chicken Wings</span><span>$44.98</span></li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>👨‍🍳 Chef Recommendations 🍚</summary>
+        <ul>
+            <li><span>Seafood Delight</span><span>$18.98</span></li>
+            <li><span>Orange / General Tso's 🌶 / Sesame Beef</span><span>$16.98</span></li>
+            <li><span>Orange / General Tso's 🌶 / Sesame Chicken</span><span>$15.98</span></li>
+            <li><span>Happy Family</span><span>$16.98</span></li>
+            <li><span>1/2 Roast Duck</span><span>$23.98</span></li>
+            <li><span>Beef w/ Black Pepper Sauce</span><span>$17.98</span></li>
+            <li><span>House Special Steak</span><span>$20.98</span></li>
+            <li><span>Singapore Noodles</span><span>$14.98</span></li>
+            <li><span>Singapore Noodles w/ Jumbo Shrimp</span><span>$15.98</span></li>
+            <li><span>Singapore Noodles w/ Jumbo Shrimp & Scallops</span><span>$17.98</span></li>
+            <li><span>Cantonese Style Lo Mein</span><span>$16.98</span></li>
+            <li><span>Bok Choy w/ Jumbo Shrimp</span><span>$17.98</span></li>
+            <li><span>Bok Choy w/ Jumbo Shrimp & Scallops</span><span>$17.98</span></li>
+            <li><span>Jumbo Shrimp w/ Fresh Garlic</span><span>$17.98</span></li>
+            <li><span>Seafood Pan Fried Noodle</span><span>$19.98</span></li>
+            <li><span>Canton Style Rice Noodle</span><span>$14.98</span></li>
+            <li><span>Eight Treasure Crispy Noodle</span><span>$17.98</span></li>
+            <li><span>Salt & Pepper Shrimp (12 pcs) 🌶</span><span>$16.98</span></li>
+            <li><span>Sweet & Sour Shrimp</span><span>$14.98</span></li>
+            <li><span>Salt & Pepper Squid 🌶</span><span>$17.98</span></li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🥩 Beef (Carne) 🍚</summary>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; padding: 0 10px;">
+            <span style="flex: 2;">Item</span>
+            <span style="flex: 1;">Sm.</span>
+            <span style="flex: 1;">Lg.</span>
+        </div>
+        <ul>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Beef w/ Broccoli</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$16.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Beef w/ Mixed Vegetables</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$16.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Szechuan Beef 🌶</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$16.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Pepper Steak</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$16.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Curry Beef 🌶</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$16.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Mongolian Beef 🌶</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$16.98</span>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🍗 Chicken (Pollo) 🍚</summary>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; padding: 0 10px;">
+            <span style="flex: 2;">Item</span>
+            <span style="flex: 1;">Sm.</span>
+            <span style="flex: 1;">Lg.</span>
+        </div>
+        <ul>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Chicken w/ Broccoli</span>
+                <span style="flex: 1;">$10.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Curry Chicken 🌶</span>
+                <span style="flex: 1;">$10.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Chicken w/ Black Bean Sauce 🌶</span>
+                <span style="flex: 1;">$10.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Szechuan Chicken 🌶</span>
+                <span style="flex: 1;">$10.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Kung Pao Chicken 🌶</span>
+                <span style="flex: 1;">$10.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Cashew Chicken</span>
+                <span style="flex: 1;">$10.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Chicken w/ Garlic Sauce 🌶</span>
+                <span style="flex: 1;">$10.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Honey Garlic Chicken</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Sweet & Sour Chicken</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🐷 Pork (Puerco) 🍚</summary>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; padding: 0 10px;">
+            <span style="flex: 2;">Item</span>
+            <span style="flex: 1;">Sm.</span>
+            <span style="flex: 1;">Lg.</span>
+        </div>
+        <ul>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Pork w/ Mixed Vegetables</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Pork w/ Garlic Sauce 🌶</span>
+                <span style="flex: 1;">—</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Szechuan Pork 🌶</span>
+                <span style="flex: 1;">—</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Sweet & Sour Pork</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🦐 Seafood (Marisco) 🍚</summary>
+        <ul>
+            <li><span>Kung Pao Shrimp 🌶</span><span>$15.98</span></li>
+            <li><span>Cashew Shrimp</span><span>$15.98</span></li>
+            <li><span>Shrimp w/ Broccoli</span><span>$15.98</span></li>
+            <li><span>Shrimp w/ Mixed Vegetables</span><span>$15.98</span></li>
+            <li><span>Szechuan Shrimp 🌶</span><span>$15.98</span></li>
+            <li><span>Curry Shrimp 🌶</span><span>$15.98</span></li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🥦 Vegetarian 🍚</summary>
+        <ul>
+            <li><span>Tofu w/ Mixed Vegetables</span><span>$13.98</span></li>
+            <li><span>Sauteed Broccoli w/ Garlic Sauce</span><span>$12.98</span></li>
+            <li><span>Szechuan Vegetables 🌶</span><span>$12.98</span></li>
+            <li><span>Curry w/ Mixed Vegetables 🌶</span><span>$12.98</span></li>
+            <li><span>Vegetable Lo Mein</span><span>$12.98</span></li>
+            <li><span>Mixed Vegetables</span><span>$12.98</span></li>
+            <li><span>Eggplant w/ Garlic Sauce</span><span>$12.98</span></li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🥬 Chop Suey & Chow Mein 🍚</summary>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; padding: 0 10px;">
+            <span style="flex: 2;">Item</span>
+            <span style="flex: 1;">Sm.</span>
+            <span style="flex: 1;">Lg.</span>
+        </div>
+        <ul>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Vegetable</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Chicken</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Pork</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Beef</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Shrimp</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Special</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🥡 Rice (Arroz)</summary>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; padding: 0 10px;">
+            <span style="flex: 2;">Item</span>
+            <span style="flex: 1;">Pt.</span>
+            <span style="flex: 1;">Qt.</span>
+            <span style="flex: 1;">Jumbo</span>
+            <span style="flex: 1;">Tray</span>
+        </div>
+        <ul>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">White</span>
+                <span style="flex: 1;">$1.70</span>
+                <span style="flex: 1;">$3.25</span>
+                <span style="flex: 1;">—</span>
+                <span style="flex: 1;">—</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Vegetable Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.58</span>
+                <span style="flex: 1;">$24.98</span>
+                <span style="flex: 1;">$28.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Chicken Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.58</span>
+                <span style="flex: 1;">$24.98</span>
+                <span style="flex: 1;">$28.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Pork Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.58</span>
+                <span style="flex: 1;">$24.98</span>
+                <span style="flex: 1;">$28.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Ham Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.58</span>
+                <span style="flex: 1;">$24.98</span>
+                <span style="flex: 1;">$28.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Krab Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$26.98</span>
+                <span style="flex: 1;">32.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Beef Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$26.98</span>
+                <span style="flex: 1;">32.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Shrimp Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$26.98</span>
+                <span style="flex: 1;">32.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Seafood Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$26.98</span>
+                <span style="flex: 1;">32.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Yan Chop Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$26.98</span>
+                <span style="flex: 1;">32.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Jumbo Shrimp Fried Rice</span>
+                <span style="flex: 1;">—</span>
+                <span style="flex: 1;">$14.98</span>
+                <span style="flex: 1;">—</span>
+                <span style="flex: 1;">—</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Special Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$26.98</span>
+                <span style="flex: 1;">32.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Chicken & Shrimp Fried Rice</span>
+                <span style="flex: 1;">$6.98</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$26.98</span>
+                <span style="flex: 1;">32.98</span>
+            </li>
+        </ul>
+    </details>
+
+
+    <details>
+        <summary>🍜 Lo Mein (Soft Noodle) - Fideo</summary>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; padding: 0 10px;">
+            <span style="flex: 2;">Item</span>
+            <span style="flex: 1;">Sm.</span>
+            <span style="flex: 1;">Lg.</span>
+        </div>
+        <ul>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Vegetable Lo Mein</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$13.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Chicken Lo Mein</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Pork Lo Mein</span>
+                <span style="flex: 1;">$11.98</span>
+                <span style="flex: 1;">$14.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Beef Lo Mein</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Shrimp Lo Mein</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Special Lo Mein</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Seafood Lo Mein</span>
+                <span style="flex: 1;">$12.98</span>
+                <span style="flex: 1;">$15.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Jumbo Shrimp Lo Mein</span>
+                <span style="flex: 1;">—</span>
+                <span style="flex: 1;">$17.98</span>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🍳 Egg Foo Young (Tortilla De Huevo) 🍚</summary>
+        <ul>
+            <li><span>Vegetable</span><span>$12.98</span></li>
+            <li><span>Chicken</span><span>$13.98</span></li>
+            <li><span>Shrimp</span><span>$14.98</span></li>
+            <li><span>Roast Pork</span><span>$13.98</span></li>
+            <li><span>Ham</span><span>$13.98</span></li>
+            <li><span>Special</span><span>$14.98</span></li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🥣 Soup (Sopa)</summary>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; padding: 0 10px;">
+            <span style="flex: 2;">Item</span>
+            <span style="flex: 1;">Pt.</span>
+            <span style="flex: 1;">Qt.</span>
+        </div>
+        <ul>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Egg Drop Soup</span>
+                <span style="flex: 1;">$3.58</span>
+                <span style="flex: 1;">$5.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Wonton Soup</span>
+                <span style="flex: 1;">$3.98</span>
+                <span style="flex: 1;">$6.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Mixed Soup</span>
+                <span style="flex: 1;">$4.28</span>
+                <span style="flex: 1;">$6.28</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Hot & Sour Soup</span>
+                <span style="flex: 1;">$4.58</span>
+                <span style="flex: 1;">$6.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Chicken Noodle Soup</span>
+                <span style="flex: 1;">$4.28</span>
+                <span style="flex: 1;">$8.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Chicken Corn Soup</span>
+                <span style="flex: 1;">$4.98</span>
+                <span style="flex: 1;">$6.98</span>
+            </li>
+            <li style="display: flex; justify-content: space-between;">
+                <span style="flex: 2;">Special Wonton Soup</span>
+                <span style="flex: 1;">—</span>
+                <span style="flex: 1;">$9.98</span>
+            </li>
+        </ul>
+    </details>
+
+
+
+
+    <details>
+        <summary>🥤 Beverages (Bebida)</summary>
+        <ul>
+            <li><span>Canned</span><span>$2</span></li>
+            <li><span>Bottled</span><span>$2.75</span></li>
+            <li><span>32 oz Home-Made Iced Tea</span><span>$2.75</span></li>
+            <li><span>32 oz Home-Made Lemonade</span><span>$2.75</span></li>
+            <li><span>2 Liter Soda</span><span>$3.98</span></li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>🍩 Desserts</summary>
+        <ul>
+            <li><span>Thai Donuts (10 pcs)</span><span>$6.98</span></li>
+        </ul>
+    </details>
+
 </section>
 
-<!-- Search functionality -->
 <script>
     function searchMenu() {
       const input = document.getElementById('searchInput');
       const filter = input.value.toLowerCase();
       const items = document.querySelectorAll('#menu li');
-
       items.forEach(item => {
         const text = item.textContent.toLowerCase();
         item.style.display = text.includes(filter) ? "" : "none";
