@@ -623,14 +623,33 @@
 
 <script>
     function searchMenu() {
-      const input = document.getElementById('searchInput');
-      const filter = input.value.toLowerCase();
-      const items = document.querySelectorAll('#menu li');
-      items.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        item.style.display = text.includes(filter) ? "" : "none";
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const detailsList = document.querySelectorAll('#menu details');
+
+      detailsList.forEach(details => {
+        const listItems = details.querySelectorAll('li');
+        let hasMatch = false;
+
+        listItems.forEach(item => {
+          const text = item.textContent.toLowerCase();
+          const match = text.includes(input);
+          item.style.display = match ? '' : 'none';
+          if (match) hasMatch = true;
+        });
+
+        // Open section if any matches, close if none and search is active
+        if (input && hasMatch) {
+          details.open = true;
+        } else if (input && !hasMatch) {
+          details.open = false;
+        } else {
+          // Reset to original state when input is empty
+          listItems.forEach(item => item.style.display = '');
+          details.open = false;
+        }
       });
     }
 </script>
+
 </body>
 </html>
